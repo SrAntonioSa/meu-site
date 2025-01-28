@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação de PDFs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manipulação de PDFs e Imagens</h1>
+
+    <div class="section">
+      <h2>Juntar PDFs</h2>
+      <input type="file" id="merge-pdf-files" multiple accept="application/pdf">
+      <button id="merge-pdf-button">Juntar PDFs</button>
+      <a id="merge-pdf-download" class="hidden" download="merged.pdf">Baixar PDF Combinado</a>
+    </div>
+
+    <div class="section">
+      <h2>Converter Imagens para PDF</h2>
+      <input type="file" id="image-files" multiple accept="image/png, image/jpeg">
+      <button id="convert-images-button">Converter para PDF</button>
+      <a id="image-pdf-download" class="hidden" download="images.pdf">Baixar PDF de Imagens</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
